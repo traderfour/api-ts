@@ -48,7 +48,6 @@
     "vitest": "^0.29.7"
   },
   "dependencies": {
-    "@traderfour/my-ts": "^1.0.0-alpha.2",
-    "ofetch": "^1.0.1"
+    "@traderfour/my-ts": "^1.0.0-alpha.2"
   }
 }
