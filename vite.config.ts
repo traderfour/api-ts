@@ -12,8 +12,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "my-ts",
-      fileName: "my-ts",
+      name: "api-ts",
+      fileName: "api-ts",
     },
   },
   resolve: {

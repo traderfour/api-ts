@@ -1,7 +1,7 @@
 {
   "name": "@traderfour/api-ts",
   "private": false,
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "type": "module",
   "main": "./dist/api-ts.umd.cjs",
   "module": "./dist/api-ts.js",
