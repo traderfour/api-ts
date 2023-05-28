@@ -5,4 +5,6 @@ export interface IPlatform extends IResponse{
     title: string;
     slug: string;
     icon: string;
+    cover: string;
+    status: number;
 }

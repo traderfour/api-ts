@@ -1,17 +1,12 @@
 import { config } from "./modules/config";
-import {ICategoryList} from "./modules/apis/categories/interface/ICategoryList";
-import {ICategory} from "./modules/interface/ICategory";
-import {categories} from "./modules/apis/categories";
-import {IPostList} from "@traderfour/my-ts/dist/modules/apis/posts/interface/IPostList";
+import {categories, ICategoryModule} from "./modules/apis/categories";
 import {myTs, IMyTs} from "@traderfour/my-ts";
+import {IMarketModule, market} from "./modules/apis/market";
 
 export interface IApiTs {
   config: typeof config;
-  categories: {
-    list: (endpoint?: string | undefined) => Promise<ICategoryList>;
-    single: (endpoint?: string | undefined) => Promise<ICategory>;
-    posts: (endpoint?: string | undefined) => Promise<IPostList>;
-  },
+  categories: ICategoryModule,
+  market: IMarketModule;
   myTs: IMyTs;
 }
 
@@ -19,6 +14,7 @@ export const apiTS = (): IApiTs => {
   return {
     config,
     categories: categories(),
+    market: market(),
     myTs: myTs()
   };
 };

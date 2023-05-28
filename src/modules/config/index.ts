@@ -1,5 +1,5 @@
 import { IConfig } from "./interface/Config";
-
+import {myTs} from "@traderfour/my-ts";
 /**
  * @description Set Base URL and other configs
  * @returns your base URL is Set and other configs added
@@ -12,14 +12,14 @@ export let config: IConfig = {
   endpoints: {
     categories: "/categories/",
     tags: "/tags/",
-    posts: "/my/posts/",
-    trading:{
-      accounts: "/my/trading/accounts/",
-      frameworks: "/my/trading/frameworks/",
-      bridge:{
-          check: "/my/trading/bridge/check",
-          webhook: "/my/trading/bridge/webhook"
-      }
-    }
+    market: {
+        markets: "/market/markets/",
+        regulations: "/market/regulations/",
+        brokers: "/market/brokers/",
+        platforms: "/market/platforms/",
+        servers: "/market/servers/",
+        instruments: "/market/instruments/",
+    },
+    my: myTs().config.endpoints,
   },
 };
