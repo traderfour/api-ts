@@ -1,6 +1,6 @@
 import responseHandeling from "../../../core/responseHandeling";
 import { useHeaders, useUrl } from "../../../core";
-import {ICategoryList} from "./interface/ICategoryList";
+import {ICategoryList} from "../../interface/ICategoryList";
 import {config} from "../../config";
 
 /**

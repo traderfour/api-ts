@@ -1,6 +1,6 @@
 import responseHandeling from "../../../core/responseHandeling";
 import { useHeaders, useUrl } from "../../../core";
-import { ITagList } from "./interface/ITagList";
+import { ITagList } from "../../interface/ITagList";
 import { config } from "../../config";
 
 /**
