@@ -17,7 +17,7 @@ export const apiTS = (): IApiTs => {
     config,
     categories: categories(),
     market: market(),
-    tags: tag(),
+    tags: tags(),
     myTs: myTs(),
   };
 };

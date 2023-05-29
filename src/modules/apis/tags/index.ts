@@ -13,7 +13,7 @@ export const tags = () => {
   };
 };
 
-export interface IBrokersModule {
+export interface ITagsModule {
   list: (endpoint?: string | undefined) => Promise<ITagList>;
   single: (endpoint?: string | undefined, id?: string) => Promise<ITag>;
   post: (endpoint?: string | undefined, id?: string) => Promise<IPostList>;
