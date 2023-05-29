@@ -10,8 +10,7 @@ import { IPostList } from "@traderfour/my-ts/dist/modules/apis/posts/interface/I
  * @param endpoint
  * @param id
  */
-
-export const post = async (
+export const posts = async (
   endpoint?: string,
   id?: string
 ): Promise<IPostList> => {
